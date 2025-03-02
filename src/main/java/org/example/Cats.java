@@ -5,6 +5,13 @@ public class Cats extends Animal {
     int maxJamp = 3;
     int maxRun =200;
     int maxSwim = 0;
+    private static int countCats = 0;
+    public Cats(){
+        countCats++;
+    }
+    public static int getCountCats(){
+        return countCats;
+    }
 
     @Override
     public void jamp(String name, int heightJump) {

@@ -10,6 +10,8 @@ public class Main {
         Cats catBarsik = new Cats();
         catBarsik.swim(" Барсик ", 4);
 
-        System.out.println("count animals: " + Animal.getCountAnimals());
+        System.out.println("Создано животных: " + Animal.getCountAnimals());
+        System.out.println("Создано котиков: " + Cats.getCountCats());
+        System.out.println("Сщздано сабачек: " + Dog.getCountDogs());
     }
 }

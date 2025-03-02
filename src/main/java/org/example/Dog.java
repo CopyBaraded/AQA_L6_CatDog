@@ -5,10 +5,12 @@ public class Dog extends Animal {
     int maxJamp = 5;
     int maxRun = 500;
     int maxSwim = 10;
-    int countDog = 0;
-
+    private static int countDogs = 0;
     public Dog(){
-        countDog++;
+        countDogs++;
+    }
+    public static int getCountDogs(){
+        return countDogs;
     }
 
     @Override

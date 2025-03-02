@@ -28,7 +28,7 @@ public class Dog extends Animal {
 
     @Override
     public void swim(String name, int distSwim) {
-        if (distSwim <= maxRun)
+        if (distSwim <= maxSwim)
             System.out.println(name + " run " + distSwim + " m ");
         else
             System.out.println(name + " not run " + distSwim + " m ");

@@ -13,12 +13,7 @@ public abstract class Animal {
 //        this.heightJump = jump;
 //    }
     public abstract void jamp(String name, int heightJump);
-    public void run(String name, int distRun){
-        System.out.println("run" + distRun + "m");
-    }
-    public void swim(String name, int distSwim){
-        System.out.println("swim" + distSwim + "m");
-    }
-
+    public abstract void run(String name, int distRun);
+    public abstract void swim(String name, int distSwim);
 
 }

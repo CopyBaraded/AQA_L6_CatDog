@@ -13,13 +13,26 @@ public class Dog extends Animal {
     @Override
     public void jamp(String name, int heightJump) {
         if (heightJump <= maxJamp)
-            System.out.println(name + "jamp" + heightJump + "m");
+            System.out.println(name + " jamp " + heightJump + " m ");
         else
-            System.out.println(name + "not jump");
+            System.out.println(name + " not jump " + heightJump + " m ");
     }
 
+    @Override
+    public void run(String name, int distRun){
+        if (distRun <= maxRun)
+            System.out.println(name + " run " + distRun + " m ");
+        else
+            System.out.println(name + " not run " + distRun + " m ");
+    }
 
-
+    @Override
+    public void swim(String name, int distSwim) {
+        if (distSwim <= maxRun)
+            System.out.println(name + " run " + distSwim + " m ");
+        else
+            System.out.println(name + " not run " + distSwim + " m ");
+    }
 
 
 }

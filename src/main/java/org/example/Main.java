@@ -39,8 +39,6 @@ public class Main {
         System.out.println("Добавили еды в миску. Теперь в миске: " + bowl.getFood());
 
 
-
-
         System.out.println("Создано животных: " + Animal.getCountAnimals());
         System.out.println("Создано котиков: " + Cats.getCountCats());
         System.out.println("Создано сабачек: " + Dog.getCountDogs());

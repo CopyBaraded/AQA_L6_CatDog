@@ -1,8 +1,5 @@
 package org.example;
 
-
-
-
 public class Cats extends Animal {
 
     int maxJamp = 3;
@@ -54,23 +51,6 @@ public class Cats extends Animal {
             System.out.println("Даже не предлагайте коту плавать");
 
     }
-
-
-
-
-
-//    public int getAppetite() {
-//        return appetite;
-//    }
-//
-//    public boolean getCatHunger() {
-//        return catHunger;
-//    }
-//
-//    public boolean eat(int appetite, int food) {
-//        return appetite <= food;
-//
-//    }
 
 
     public void eat(Bowl bowl, int appetite) {

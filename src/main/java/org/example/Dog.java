@@ -37,5 +37,4 @@ public class Dog extends Animal {
             System.out.println(name + " не проплыл " + distSwim + " м ");
     }
 
-
 }

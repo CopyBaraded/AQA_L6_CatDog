@@ -9,6 +9,10 @@ public class Dog extends Animal {
     int maxJamp = 5;
     int maxRun = 500;
     int maxSwim = 10;
+    int count = 0;
+    public Dog(){
+        getCount();
+    }
 
     @Override
     public void jamp(String name, int heightJump) {
@@ -34,5 +38,9 @@ public class Dog extends Animal {
             System.out.println(name + " не проплыл " + distSwim + " м ");
     }
 
+    public void getCount() {
+
+        count++;
+    }
 
 }

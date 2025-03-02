@@ -1,6 +1,8 @@
 package org.example;
 
 
+
+
 public class Cats extends Animal {
 
     int maxJamp = 3;
@@ -8,7 +10,7 @@ public class Cats extends Animal {
     int maxSwim = 0;
     private static int countCats = 0;
     String name;
-    private int appetite;
+
     private boolean catHunger;
 
     public Cats() {
@@ -69,6 +71,7 @@ public class Cats extends Animal {
 //        return appetite <= food;
 //
 //    }
+
 
     public void eat(Bowl bowl, int appetite) {
         if (bowl.delFood(appetite)) {

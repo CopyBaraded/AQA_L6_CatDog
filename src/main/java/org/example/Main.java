@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.Random;
+
+
 public class Main {
     public static void main(String[] args) {
         Dog dogShar = new Dog();
@@ -8,14 +11,38 @@ public class Main {
         Cats catBarsik = new Cats();
         catBarsik.swim(" Барсик ", 4);
 
-        Bowl bowl = new Bowl(70);
+        Bowl bowl = new Bowl(50);
 
-        Cats cats = new Cats("ghf");
+        Cats[] cats = {
+                new Cats("Murzik"),
+                new Cats("Garry"),
+                new Cats("Funtik"),
+                new Cats("Pupsik"),
+                new Cats("Puffnutiy"),
+                new Cats("Garfield")
+        };
+        Random random = new Random();
+        int appetite = random.nextInt(100);
+        System.out.println("АППЕТИТ у котиков:  " + appetite);
+        for (Cats cat : cats) {
+            cat.eat(bowl, appetite);
+        }
+
+        System.out.println("Информация о сытости котов:");
+        for (Cats cat : cats) {
+            System.out.println(cat.name + " сыт: " + cat.doneHunger());
+        }
+
+        System.out.println("Осталось еды в миске: " + bowl.getFood());
+
+        bowl.addFood(30);
+        System.out.println("Добавили еды в миску. Теперь в миске: " + bowl.getFood());
+
 
 
 
         System.out.println("Создано животных: " + Animal.getCountAnimals());
         System.out.println("Создано котиков: " + Cats.getCountCats());
-        System.out.println("Сщздано сабачек: " + Dog.getCountDogs());
+        System.out.println("Создано сабачек: " + Dog.getCountDogs());
     }
 }

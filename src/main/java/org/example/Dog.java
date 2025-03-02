@@ -2,16 +2,13 @@ package org.example;
 
 public class Dog extends Animal {
 
-
-//    public Dog(String name, int run, int swim, int jump) {
-//        super(name, run, swim, jump);
-    //}
     int maxJamp = 5;
     int maxRun = 500;
     int maxSwim = 10;
-    int count = 0;
+    int countDog = 0;
+
     public Dog(){
-        getCount();
+        countDog++;
     }
 
     @Override
@@ -38,9 +35,5 @@ public class Dog extends Animal {
             System.out.println(name + " не проплыл " + distSwim + " м ");
     }
 
-    public void getCount() {
-
-        count++;
-    }
 
 }

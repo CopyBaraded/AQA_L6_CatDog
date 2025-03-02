@@ -10,6 +10,6 @@ public class Main {
         Cats catBarsik = new Cats();
         catBarsik.swim(" Барсик ", 4);
 
-        System.out.println("count animals: " + Dog.);
+        System.out.println("count animals: " + Animal.getCountAnimals());
     }
 }

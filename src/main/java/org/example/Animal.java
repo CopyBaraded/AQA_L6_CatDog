@@ -14,24 +14,18 @@ package org.example;
 · Создать массив котов и миску с едой, попросить всех котов покушать из этой миски и потом вывести информацию о сытости котов в консоль.
 • Добавить метод, с помощью которого можно было бы добавлять еду в миску.
  */
-public abstract class Animal {
-//    String name;
-//    int distRun;
-//    int distSwim;
-//    int heightJump;
-//
-//    public Animal (String name, int run, int swim, int jump){
-//        this.name = name;
-//        this.distRun = run;
-//        this.distSwim = swim;
-//        this.heightJump = jump;
-//    }
-    public abstract void jamp(String name, int heightJump);
-    public abstract void run(String name, int distRun);
-    public abstract void swim(String name, int distSwim);
-//    private static int count = 0;
-//    public static int getCount() {
-//        return count ++;
-//    }
+public class Animal {
+
+    public void jamp(String name, int heightJump){};
+    public void run(String name, int distRun){};
+    public void swim(String name, int distSwim){};
+    private static int countAnimals = 0;
+    public Animal(){
+        countAnimals++;
+    }
+    public static int getCountAnimals(){
+        return countAnimals;
+    }
+
 
 }

@@ -2,10 +2,6 @@ package org.example;
 
 public class Cats extends Animal {
 
-
-//    public Cats(String name, int run, int swim, int jump) {
-//        super(name, run, swim, jump);
-//    }
     int maxJamp = 3;
     int maxRun =200;
     int maxSwim = 0;

@@ -1,7 +1,5 @@
 package org.example;
 
-import java.io.PrintStream;
-
 public class Main {
     public static void main(String[] args) {
         Dog dogShar = new Dog();
@@ -9,6 +7,12 @@ public class Main {
 
         Cats catBarsik = new Cats();
         catBarsik.swim(" Барсик ", 4);
+
+        Bowl bowl = new Bowl(70);
+
+        Cats cats = new Cats("ghf");
+
+
 
         System.out.println("Создано животных: " + Animal.getCountAnimals());
         System.out.println("Создано котиков: " + Cats.getCountCats());

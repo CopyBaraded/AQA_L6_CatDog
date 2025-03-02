@@ -1,17 +1,30 @@
 package org.example;
 
+
 public class Cats extends Animal {
 
     int maxJamp = 3;
-    int maxRun =200;
+    int maxRun = 200;
     int maxSwim = 0;
     private static int countCats = 0;
-    public Cats(){
+    String name;
+    private int appetite;
+    private boolean catHunger;
+
+    public Cats() {
         countCats++;
     }
-    public static int getCountCats(){
+
+    public Cats(String name) {
+        this.name = name;
+        this.catHunger = false;
+        countCats++;
+    }
+
+    public static int getCountCats() {
         return countCats;
     }
+
 
     @Override
     public void jamp(String name, int heightJump) {
@@ -37,6 +50,38 @@ public class Cats extends Animal {
             System.out.println(name + " отказался плыть вовсе ");
         else
             System.out.println("Даже не предлагайте коту плавать");
+
+    }
+
+
+
+
+
+//    public int getAppetite() {
+//        return appetite;
+//    }
+//
+//    public boolean getCatHunger() {
+//        return catHunger;
+//    }
+//
+//    public boolean eat(int appetite, int food) {
+//        return appetite <= food;
+//
+//    }
+
+    public void eat(Bowl bowl, int appetite) {
+        if (bowl.delFood(appetite)) {
+            catHunger = true;
+            System.out.println(name + " покушал и теперь сыт.");
+        } else {
+            System.out.println(name + " не смог покушать, так как в миске недостаточно еды.");
+        }
+    }
+
+    public boolean doneHunger() {
+        return catHunger;
+
 
     }
 }

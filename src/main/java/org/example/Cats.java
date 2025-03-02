@@ -13,24 +13,27 @@ public class Cats extends Animal {
     @Override
     public void jamp(String name, int heightJump) {
         if (heightJump <= maxJamp)
-            System.out.println(name + " jamp " + heightJump + " m ");
+            System.out.println(name + " прыгнул " + heightJump + " м ");
         else
-            System.out.println(name + " not jump " + heightJump + " m ");
+            System.out.println(name + " не прыгнет " + heightJump + " м ");
 
     }
 
     @Override
     public void run(String name, int distRun) {
         if (distRun <= maxRun)
-            System.out.println(name + " run " + distRun + " m ");
+            System.out.println(name + " пробежал " + distRun + " м ");
         else
-            System.out.println(name + " not run " + distRun + " m ");
+            System.out.println(name + " не пробежал " + distRun + " м ");
     }
 
     @Override
     public void swim(String name, int distSwim) {
-        boolean b = distSwim != maxSwim;
-            System.out.println(name + " cat not swim " + b);
+
+        if (distSwim > maxSwim)
+            System.out.println(name + " отказался плыть вовсе ");
+        else
+            System.out.println("Даже не предлагайте коту плавать");
 
     }
 }

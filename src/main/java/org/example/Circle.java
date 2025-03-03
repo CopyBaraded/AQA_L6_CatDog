@@ -4,7 +4,7 @@ package org.example;
 Формула расчета периметра круга:      C = 2 · π · r где r – радиус, π – число пи.
  */
 
-class Circle implements Calculate {
+public class Circle implements Calculate {
     private double radius;
     private String colorBody;
     private String colorBorder;

@@ -44,8 +44,14 @@ public class Main {
 //        System.out.println("Создано сабачек: " + Dog.getCountDogs());
 
         Circle circle = new Circle(8, "black", "red");
+        Rectangle rectangle = new Rectangle(6, 8, "yelow", "white");
+        Triangle triangle = new Triangle(5, 3, 8, "purple", "pink");
 
         System.out.println("Har circle: ");
         circle.printInfo();
+        System.out.println("Прямоугольник: ");
+        rectangle.printInfo();
+        System.out.println("Треугольник: ");
+        triangle.printInfo();
     }
 }

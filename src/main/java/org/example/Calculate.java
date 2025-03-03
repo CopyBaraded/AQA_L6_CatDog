@@ -13,9 +13,9 @@ public interface Calculate {
     String getColorBorder();
 
     default void printInfo () {
-        System.out.println("Area: " + getArea()
-                + "\nPer: " + getPerimeter()
-                + "\n color body:" + getColorBody()
-                + "\n color bord: " + getColorBorder());
+        System.out.println("Площадь фигуры: " + getArea()
+                + "\nПериметр фигуры: " + getPerimeter()
+                + "\n Цвет заливки:" + getColorBody()
+                + "\n Цвет границ: " + getColorBorder());
     }
 }

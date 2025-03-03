@@ -21,26 +21,31 @@ public class Main {
                 new Cats("Puffnutiy"),
                 new Cats("Garfield")
         };
-        Random random = new Random();
-        int appetite = random.nextInt(100);
-        System.out.println("АППЕТИТ у котиков:  " + appetite);
-        for (Cats cat : cats) {
-            cat.eat(bowl, appetite);
-        }
+//        Random random = new Random();
+//        int appetite = random.nextInt(100);
+//        System.out.println("АППЕТИТ у котиков:  " + appetite);
+//        for (Cats cat : cats) {
+//            cat.eat(bowl, appetite);
+//        }
+//
+//        System.out.println("Информация о сытости котов:");
+//        for (Cats cat : cats) {
+//            System.out.println(cat.name + " сыт: " + cat.doneHunger());
+//        }
+//
+//        System.out.println("Осталось еды в миске: " + bowl.getFood());
+//
+//        bowl.addFood(30);
+//        System.out.println("Добавили еды в миску. Теперь в миске: " + bowl.getFood());
+//
+//
+//        System.out.println("Создано животных: " + Animal.getCountAnimals());
+//        System.out.println("Создано котиков: " + Cats.getCountCats());
+//        System.out.println("Создано сабачек: " + Dog.getCountDogs());
 
-        System.out.println("Информация о сытости котов:");
-        for (Cats cat : cats) {
-            System.out.println(cat.name + " сыт: " + cat.doneHunger());
-        }
+        Circle circle = new Circle(8, "black", "red");
 
-        System.out.println("Осталось еды в миске: " + bowl.getFood());
-
-        bowl.addFood(30);
-        System.out.println("Добавили еды в миску. Теперь в миске: " + bowl.getFood());
-
-
-        System.out.println("Создано животных: " + Animal.getCountAnimals());
-        System.out.println("Создано котиков: " + Cats.getCountCats());
-        System.out.println("Создано сабачек: " + Dog.getCountDogs());
+        System.out.println("Har circle: ");
+        circle.printInfo();
     }
 }

@@ -17,7 +17,5 @@ public interface Calculate {
                 + "\nPer: " + getPerimeter()
                 + "\n color body:" + getColorBody()
                 + "\n color bord: " + getColorBorder());
-
-
     }
 }
